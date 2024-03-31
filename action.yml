@@ -1,0 +1,17 @@
+name: test-action-node
+description: Test action for node
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+inputs:
+  input1:
+    description: "Test input1, must be 'lorem', 'ipsum' or 'dolor'"
+  input2:
+    description: "Test input2, must be 'lorem', 'ipsum' or 'dolor'"
+  environment:
+    description: "Print details about the environment to stdout"
+outputs:
+  output1:
+    description: "Test output1"
+  output2:
+    description: "Test output2"
